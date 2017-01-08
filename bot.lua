@@ -99,7 +99,7 @@ function vardump(value, depth, key)
   elseif type(value)  == 'function' or
     type(value) == 'thread' or
     type(value) == 'userdata' or
-    value == nil then --@MuteTeam
+    value == nil then --@pedaret
     print(spaces .. tostring(value))
   elseif type(value)  == 'string' then
     print(spaces .. linePrefix .. '"' .. tostring(value) .. '",')
